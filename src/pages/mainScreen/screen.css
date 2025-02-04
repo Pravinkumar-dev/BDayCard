@@ -1,0 +1,33 @@
+.wishPageBg {
+  animation: bgChange 1s ease forwards;
+}
+.bgAnimation {
+  animation: bgSwap 10s 1s ease-in-out infinite;
+}
+
+@keyframes bgSwap {
+  0% {
+    background-color: #ffffff;
+  }
+  25% {
+    background-color: #f0d8ac;
+  }
+  50% {
+    background-color: #d7ae5f;
+  }
+  75% {
+    background-color: #a9908d;
+  }
+  100% {
+    background-color: #f7f1cf;
+  }
+}
+
+@keyframes bgChange {
+  0% {
+    background-color: #314259;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
