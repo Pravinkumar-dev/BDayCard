@@ -40,6 +40,9 @@
   animation: glow7 3s ease 0.5s infinite;
   background-color: #023468;
 }
+.top-23{
+  top: 86px;
+}
 
 @keyframes glow {
   0% {

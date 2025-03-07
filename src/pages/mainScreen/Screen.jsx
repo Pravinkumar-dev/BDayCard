@@ -23,6 +23,7 @@ const wishPageTransition = {
 function Screen() {
   const [step, setstep] = useState(initialState);
   const [playMusic, setPlayMusic] = useState(false);
+  const [isCandleOn, setIsCandleOn] = useState(true);
 
   const startMusic = () => {
     setPlayMusic(true);
@@ -32,6 +33,8 @@ function Screen() {
     setTimeout(() => {
       if (step.currentStep === 1) {
         startMusic();
+      } else if (step.currentStep === 4) {
+        setIsCandleOn(false);
       }
       setstep((prev) => ({
         ...prev,
@@ -80,7 +83,7 @@ function Screen() {
             animate={{ opacity: 1 }}
             transition={wishPageTransition}
           >
-            <WishPage />
+            <WishPage step={step} isCandleOn={isCandleOn} />
             <BGMusic play={playMusic} />
           </motion.div>
         )}
