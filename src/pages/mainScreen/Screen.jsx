@@ -70,7 +70,7 @@ function Screen() {
       >
         {step.currentStep === 0 ? (
           <motion.p
-            className="text-4xl text-white px-5 text-center mb-10"
+            className="text-4xl text-white px-5 text-center mb-10 leading-14"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={opacityTransition}
