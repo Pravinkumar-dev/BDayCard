@@ -4,7 +4,7 @@ import BulbImage from "../../../../../assets/image/bulb.png";
 function Header() {
   return (
     <header className="flex">
-      <div className="w-10 border-r-2 h-4 relative">
+      <div className="w-10 border-r-2 h-4 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -12,7 +12,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreOne"></div>
       </div>
-      <div className="w-10 border-r-2 h-20 relative">
+      <div className="w-10 border-r-2 h-20 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -20,7 +20,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreTwo"></div>
       </div>
-      <div className="w-10 border-r-2 h-12 relative">
+      <div className="w-10 border-r-2 h-12 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -28,7 +28,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreThree"></div>
       </div>
-      <div className="w-10 border-r-2 h-7 relative">
+      <div className="w-10 border-r-2 h-7 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -36,7 +36,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreFour"></div>
       </div>
-      <div className="w-10 border-r-2 h-14 relative">
+      <div className="w-10 border-r-2 h-14 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -44,7 +44,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreFive"></div>
       </div>
-      <div className="w-10 border-r-2 h-16 relative">
+      <div className="w-10 border-r-2 h-16 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -52,7 +52,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreSix"></div>
       </div>
-      <div className="w-10 border-r-2 h-4 relative">
+      <div className="w-10 border-r-2 h-4 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -60,7 +60,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreOne"></div>
       </div>
-      <div className="w-10 border-r-2 h-20 relative">
+      <div className="w-10 border-r-2 h-20 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -68,7 +68,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreTwo"></div>
       </div>
-      <div className="w-10 border-r-2 h-12 relative">
+      <div className="w-10 border-r-2 h-12 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -76,7 +76,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreThree"></div>
       </div>
-      <div className="w-10 border-r-2 h-10 relative">
+      <div className="w-10 border-r-2 h-10 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -84,7 +84,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreSeven"></div>
       </div>
-      <div className="w-10 border-r-2 h-16 relative">
+      <div className="w-10 border-r-2 h-16 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -92,7 +92,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreSix"></div>
       </div>
-      <div className="w-10 border-r-2 h-4 relative">
+      <div className="w-10 border-r-2 h-4 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -100,7 +100,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreOne"></div>
       </div>
-      <div className="w-10 border-r-2 h-20 relative">
+      <div className="w-10 border-r-2 h-20 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -108,7 +108,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreTwo"></div>
       </div>
-      <div className="w-10 border-r-2 h-12 relative">
+      <div className="w-10 border-r-2 h-12 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -116,7 +116,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreThree"></div>
       </div>
-      <div className="w-10 border-r-2 h-10 relative">
+      <div className="w-10 border-r-2 h-10 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -124,7 +124,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreSeven"></div>
       </div>
-      <div className="w-10 border-r-2 h-7 relative">
+      <div className="w-10 border-r-2 h-7 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -132,7 +132,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreFour"></div>
       </div>
-      <div className="w-10 border-r-2 h-14 relative">
+      <div className="w-10 border-r-2 h-14 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -140,7 +140,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreFive"></div>
       </div>
-      <div className="w-10 border-r-2 h-7 relative">
+      <div className="w-10 border-r-2 h-7 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -148,7 +148,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreFour"></div>
       </div>
-      <div className="w-10 border-r-2 h-14 relative">
+      <div className="w-10 border-r-2 h-14 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -156,7 +156,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreFive"></div>
       </div>
-      <div className="w-10 border-r-2 h-16 relative">
+      <div className="w-10 border-r-2 h-16 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -164,7 +164,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreSix"></div>
       </div>
-      <div className="w-10 border-r-2 h-4 relative">
+      <div className="w-10 border-r-2 h-4 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -172,7 +172,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreOne"></div>
       </div>
-      <div className="w-10 border-r-2 h-20 relative">
+      <div className="w-10 border-r-2 h-20 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -180,7 +180,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreTwo"></div>
       </div>
-      <div className="w-10 border-r-2 h-12 relative">
+      <div className="w-10 border-r-2 h-12 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -188,7 +188,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreThree"></div>
       </div>
-      <div className="w-10 border-r-2 h-10 relative">
+      <div className="w-10 border-r-2 h-10 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -196,7 +196,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreSeven"></div>
       </div>
-      <div className="w-10 border-r-2 h-16 relative">
+      <div className="w-10 border-r-2 h-16 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -204,7 +204,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreSix"></div>
       </div>
-      <div className="w-10 border-r-2 h-4 relative">
+      <div className="w-10 border-r-2 h-4 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -212,7 +212,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreOne"></div>
       </div>
-      <div className="w-10 border-r-2 h-20 relative">
+      <div className="w-10 border-r-2 h-20 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -220,7 +220,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreTwo"></div>
       </div>
-      <div className="w-10 border-r-2 h-12 relative">
+      <div className="w-10 border-r-2 h-12 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -228,7 +228,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreThree"></div>
       </div>
-      <div className="w-10 border-r-2 h-10 relative">
+      <div className="w-10 border-r-2 h-10 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -236,7 +236,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreSeven"></div>
       </div>
-      <div className="w-10 border-r-2 h-16 relative">
+      <div className="w-10 border-r-2 h-16 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"
@@ -244,7 +244,7 @@ function Header() {
         />
         <div className="w-4 h-4 rounded-full absolute bulbCoreSix"></div>
       </div>
-      <div className="w-10 border-r-2 h-4 relative">
+      <div className="w-10 border-r-2 h-4 relative z-10">
         <img
           src={BulbImage}
           alt="bulbImage"

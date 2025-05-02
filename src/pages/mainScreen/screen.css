@@ -5,8 +5,35 @@
   animation: bgSwap 10s 2s ease-in-out infinite;
 }
 
+.hideCake {
+  animation: hide 1s ease-in-out 2s forwards;
+}
+
+.removeCake {
+  animation: remove 0.1s ease-in-out 3.2s forwards;
+}
+
+@keyframes remove {
+  0% {
+    display: block;
+  }
+  100% {
+    display: none;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes bgSwap {
-  0%, 100% {
+  0%,
+  100% {
     background-color: #ffffff;
   }
   20% {

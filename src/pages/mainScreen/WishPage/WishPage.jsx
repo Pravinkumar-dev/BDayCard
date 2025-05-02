@@ -5,7 +5,9 @@ import RightRibbon from "../../../assets/image/rightRibbon.png";
 import Cake from "../../../assets/image/cake.png";
 import "./wishPage.css";
 import * as motion from "motion/react-client";
-import Candle from "../../../components/common/Candle/Candle";
+import Candle from "../../../components/Common/Candle/Candle";
+import { LABELS } from "../../../utils/appConstants";
+import Confetti from "../../../components/Confetti/Confetti";
 
 function WishPage({ step, isCandleOn }) {
   return (
@@ -43,7 +45,11 @@ function WishPage({ step, isCandleOn }) {
         </>
       )}
       {step.currentStep >= 4 && (
-        <div className="w-full flex items-center justify-center relative">
+        <div
+          className={`w-full flex items-center justify-center relative ${
+            step.currentStep === 5 && "hideCake removeCake"
+          } `}
+        >
           <motion.div
             className={"absolute top-14"}
             initial={{ opacity: 0 }}
@@ -61,6 +67,19 @@ function WishPage({ step, isCandleOn }) {
             width={250}
             className="mt-32"
           />
+        </div>
+      )}
+      {step.currentStep === 5 && (
+        <div className="w-full flex items-center justify-center">
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2, ease: "easeInOut", delay: 3.5 }}
+            className="w-80 pt-20 text-2xl text-center"
+          >
+            {LABELS.WISH_TEXT}
+          </motion.p>
+          <Confetti />
         </div>
       )}
     </section>

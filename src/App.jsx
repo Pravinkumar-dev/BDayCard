@@ -1,32 +1,19 @@
-import { useEffect } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Screen from "./pages/mainScreen/Screen";
+import Layout from "./components/Layout/Layout";
+import Screen from "./pages/MainScreen/Screen";
+import Gallery from "./pages/Gallery/Gallery";
 
 function App() {
-  useEffect(() => {
-    const setViewportHeight = () => {
-      const vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
-      console.log(vh, 'vh')
-    };
-
-    setViewportHeight();
-    window.addEventListener("resize", setViewportHeight);
-
-    return () => {
-      window.removeEventListener("resize", setViewportHeight);
-    };
-  }, []);
-
   return (
-    <main
-      style={{
-        height: "calc(var(--vh, 1vh) * 100)",
-        overflow: "hidden",
-      }}
-    >
-      <Screen />
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Screen />} />
+          <Route path="gallery" element={<Gallery />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

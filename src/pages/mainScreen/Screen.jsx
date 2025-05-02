@@ -5,6 +5,7 @@ import * as motion from "motion/react-client";
 import WishPage from "./WishPage/WishPage";
 import "./screen.css";
 import BGMusic from "../../components/BGMusic/BGMusic";
+import { useNavigate } from "react-router-dom";
 
 const initialState = { label: steps[0].label, isVisible: true, currentStep: 0 };
 
@@ -21,6 +22,8 @@ const wishPageTransition = {
 };
 
 function Screen() {
+  const navigate = useNavigate();
+
   const [step, setstep] = useState(initialState);
   const [playMusic, setPlayMusic] = useState(false);
   const [isCandleOn, setIsCandleOn] = useState(true);
@@ -30,11 +33,14 @@ function Screen() {
   };
 
   const handleClick = () => {
+    console.log(step.currentStep, 'step.currentStep')
     setTimeout(() => {
       if (step.currentStep === 1) {
         startMusic();
       } else if (step.currentStep === 4) {
         setIsCandleOn(false);
+      } else if (step.currentStep === 5) {
+        navigate("/gallery");
       }
       setstep((prev) => ({
         ...prev,
@@ -58,7 +64,7 @@ function Screen() {
   return (
     <main
       className={`w-full h-screen overflow-hidden ${
-        step.currentStep === 0 ? "  bg-slate-700" : "  wishPageBg"
+        step.currentStep === 0 ? "  bg-slate-700" : "wishPageBg"
       }`}
     >
       <div
