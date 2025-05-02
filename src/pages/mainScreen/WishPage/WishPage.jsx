@@ -5,7 +5,7 @@ import RightRibbon from "../../../assets/image/rightRibbon.png";
 import Cake from "../../../assets/image/cake.png";
 import "./wishPage.css";
 import * as motion from "motion/react-client";
-import Candle from "../../../components/Common/Candle/Candle";
+import Candle from "../../../components/common/Candle/Candle";
 import { LABELS } from "../../../utils/appConstants";
 import Confetti from "../../../components/Confetti/Confetti";
 

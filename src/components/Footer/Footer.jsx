@@ -1,4 +1,4 @@
-import ButtonComponent from "../Common/Button/ButtonComponent";
+import ButtonComponent from "../common/Button/ButtonComponent";
 
 function Footer({ state, onClick }) {
   return (
