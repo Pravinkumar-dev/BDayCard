@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Screen from "../../pages/MainScreen/Screen";
 import { Outlet } from "react-router-dom";
 
 function Layout() {

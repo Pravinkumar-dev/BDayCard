@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
-import Screen from "./pages/MainScreen/Screen";
+import Screen from "./pages/mainScreen/Screen";
 import Gallery from "./pages/Gallery/Gallery";
 
 function App() {
