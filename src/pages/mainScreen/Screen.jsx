@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { steps } from "../../utils/appConstants";
 import Footer from "../../components/Footer/Footer";
 import * as motion from "motion/react-client";
@@ -33,7 +33,6 @@ function Screen() {
   };
 
   const handleClick = () => {
-    console.log(step.currentStep, 'step.currentStep')
     setTimeout(() => {
       if (step.currentStep === 1) {
         startMusic();
@@ -60,6 +59,14 @@ function Screen() {
       }, nextStep.timeOut);
     }
   };
+
+  useEffect(() => {
+    return () => {
+      setstep(initialState);
+      setPlayMusic(false);
+      setIsCandleOn(true);
+    };
+  }, []);
 
   return (
     <main

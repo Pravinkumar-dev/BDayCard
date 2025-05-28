@@ -7,7 +7,7 @@ const opacityTransition = {
   ease: [0, 0.71, 0.2, 1.01],
 };
 
-function ButtonComponent({ isVisible, handleClick, label }) {
+function ButtonComponent({ isVisible = true, handleClick, label }) {
   return (
     isVisible && (
       <motion.button

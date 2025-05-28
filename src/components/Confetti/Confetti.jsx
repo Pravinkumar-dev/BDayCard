@@ -12,7 +12,13 @@ function Confetti() {
     setResolution({ width: windowWidth, height: windowHeight });
   }, []);
 
-  return <ReactConfetti width={resolution.width} height={resolution.height} />;
+  return (
+    <ReactConfetti
+      width={resolution.width}
+      height={resolution.height}
+      numberOfPieces={80}
+    />
+  );
 }
 
 export default Confetti;
