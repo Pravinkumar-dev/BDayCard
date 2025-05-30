@@ -1,6 +1,6 @@
 import React from "react";
 import * as motion from "motion/react-client";
-import Hugging from "../../assets/image/hugs.gif";
+import Hugging from "../../assets/image/hugs2.gif";
 import { LABELS } from "../../utils/appConstants";
 import ButtonComponent from "../../components/common/Button/ButtonComponent";
 import { useNavigate } from "react-router-dom";
@@ -42,10 +42,10 @@ function Hug() {
           className="w-full flex items-center justify-center pt-10"
         >
           <div className="w-[320px]">
-            <p className="font-semibold text-2xl">{LABELS.HUG_TEXT1}</p>
-            <p className="font-semibold text-xl pt-4">{LABELS.HUG_TEXT2}</p>
-            <p className="font-semibold text-xl">{LABELS.HUG_TEXT3}</p>
-            <p className="font-semibold text-xl">{LABELS.HUG_TEXT4}</p>
+            <p className="font-semibold text-xl">{LABELS.HUG_TEXT1}</p>
+            <p className="font-semibold text-lg pt-4">{LABELS.HUG_TEXT2}</p>
+            <p className="font-semibold text-lg">{LABELS.HUG_TEXT3}</p>
+            <p className="font-semibold text-lg">{LABELS.HUG_TEXT4}</p>
           </div>
         </motion.div>
       </div>

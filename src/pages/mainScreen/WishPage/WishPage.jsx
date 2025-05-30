@@ -70,43 +70,47 @@ function WishPage({ step, isCandleOn }) {
         </div>
       )}
       {step.currentStep === 5 && (
-        <div className="w-full flex items-center justify-center">
-          <div className="w-[320px] pt-16">
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 2, ease: "easeInOut", delay: 3.5 }}
-              className="font-semibold text-xl"
-            >
-              {LABELS.WISH_HEAD}
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 2, ease: "easeInOut", delay: 3.5 }}
-              className="pt-2"
-            >
-              {LABELS.WISH_SUB}
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 2, ease: "easeInOut", delay: 3.5 }}
-              className="pt-2"
-            >
-              {LABELS.WISH_TEXT}
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 2, ease: "easeInOut", delay: 3.5 }}
-              className="pt-8 font-semibold"
-            >
-              {LABELS.WISH_TEXT2}
-            </motion.p>
+        <>
+          <div className="w-full flex items-center justify-center">
+            <div className="w-[320px] pt-16">
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2, ease: "easeInOut", delay: 3.5 }}
+                className="font-semibold text-xl"
+              >
+                {LABELS.WISH_HEAD}
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2, ease: "easeInOut", delay: 3.5 }}
+                className="pt-2"
+              >
+                {LABELS.WISH_SUB}
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2, ease: "easeInOut", delay: 3.5 }}
+                className="pt-2"
+              >
+                {LABELS.WISH_TEXT}
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2, ease: "easeInOut", delay: 3.5 }}
+                className="pt-8 font-semibold"
+              >
+                {LABELS.WISH_TEXT2}
+              </motion.p>
+            </div>
           </div>
-          <Confetti />
-        </div>
+          <div className="absolute top-0 left-0">
+            <Confetti />
+          </div>
+        </>
       )}
     </section>
   );

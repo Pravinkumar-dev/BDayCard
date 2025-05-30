@@ -21,7 +21,7 @@ function ImageModal({ imageSrc, onClose }) {
         <img src={CloseIcon} alt="closeIcon" />
       </div>
       <motion.div
-        className="content"
+        className="content flex items-center justify-center"
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={opacityTransition}
@@ -29,7 +29,6 @@ function ImageModal({ imageSrc, onClose }) {
         <img
           src={imageSrc}
           alt="modalImage"
-          className="w-full h-full object-cover"
         />
       </motion.div>
     </motion.div>
