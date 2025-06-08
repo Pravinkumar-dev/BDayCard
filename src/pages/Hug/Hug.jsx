@@ -17,10 +17,11 @@ const opacityTransition1 = {
   ease: [0, 0.71, 0.2, 1.01],
 };
 
-function Hug() {
+function Hug({ setPlayMusic }) {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
+    setPlayMusic(false);
     navigate("/");
   };
 
@@ -43,9 +44,9 @@ function Hug() {
         >
           <div className="w-[320px]">
             <p className="font-semibold text-xl">{LABELS.HUG_TEXT1}</p>
-            <p className="font-semibold text-lg pt-4">{LABELS.HUG_TEXT2}</p>
-            <p className="font-semibold text-lg">{LABELS.HUG_TEXT3}</p>
-            <p className="font-semibold text-lg">{LABELS.HUG_TEXT4}</p>
+            <p className="pt-4">{LABELS.HUG_TEXT2}</p>
+            <p className="pt-2">{LABELS.HUG_TEXT3}</p>
+            <p className="pt-2">{LABELS.HUG_TEXT4}</p>
           </div>
         </motion.div>
       </div>

@@ -4,7 +4,6 @@ import Footer from "../../components/Footer/Footer";
 import * as motion from "motion/react-client";
 import WishPage from "./WishPage/WishPage";
 import "./screen.css";
-import BGMusic from "../../components/BGMusic/BGMusic";
 import { useNavigate } from "react-router-dom";
 
 const initialState = { label: steps[0].label, isVisible: true, currentStep: 0 };
@@ -21,11 +20,10 @@ const wishPageTransition = {
   ease: [0, 0.71, 0.2, 1.01],
 };
 
-function Screen() {
+function Screen({ setPlayMusic }) {
   const navigate = useNavigate();
 
   const [step, setstep] = useState(initialState);
-  const [playMusic, setPlayMusic] = useState(false);
   const [isCandleOn, setIsCandleOn] = useState(true);
 
   const startMusic = () => {
@@ -63,7 +61,6 @@ function Screen() {
   useEffect(() => {
     return () => {
       setstep(initialState);
-      setPlayMusic(false);
       setIsCandleOn(true);
     };
   }, []);
@@ -97,7 +94,6 @@ function Screen() {
             transition={wishPageTransition}
           >
             <WishPage step={step} isCandleOn={isCandleOn} />
-            <BGMusic play={playMusic} />
           </motion.div>
         )}
         <Footer state={step} onClick={handleClick} />
