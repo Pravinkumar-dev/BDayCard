@@ -30,7 +30,7 @@ function Hug({ setPlayMusic }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={opacityTransition}
-      className="w-full h-full p-5 flex flex-col justify-between"
+      className="w-full h-full p-5 flex flex-col"
     >
       <div>
         <div className="flex justify-center">
@@ -50,7 +50,7 @@ function Hug({ setPlayMusic }) {
           </div>
         </motion.div>
       </div>
-      <div className="md:pb-0 pb-24 flex items-center justify-center">
+      <div className="md:pb-0 pt-24 flex items-center justify-center">
         <ButtonComponent label="Restart" handleClick={handleNavigate} />
       </div>
     </motion.div>
