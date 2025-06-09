@@ -50,7 +50,7 @@ function Hug({ setPlayMusic }) {
           </div>
         </motion.div>
       </div>
-      <div className="md:pb-0 pt-24 flex items-center justify-center">
+      <div className="md:pb-0 pt-8 flex items-center justify-center">
         <ButtonComponent label="Restart" handleClick={handleNavigate} />
       </div>
     </motion.div>
