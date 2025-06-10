@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import BGAudio from "../../assets/music/blue.mp3";
+import BGAudio from "../../assets/music/audio.mp3";
 
 function BGMusic({ play }) {
   const audioRef = useRef();
